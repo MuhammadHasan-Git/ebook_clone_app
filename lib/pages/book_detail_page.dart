@@ -3,7 +3,6 @@ import 'package:ebook_clone_app/theme/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:line_icons/line_icons.dart';
-
 import '../json/home_json.dart';
 
 class BookDetailPage extends StatefulWidget {
@@ -50,9 +49,8 @@ class _BookDetailPageState extends State<BookDetailPage> {
             width: double.infinity,
             height: 180,
             decoration: BoxDecoration(
-              //ddd
               image: DecorationImage(
-                  image: NetworkImage(widget.img), fit: BoxFit.cover),
+                  image: AssetImage(widget.img), fit: BoxFit.cover),
             ),
           ),
           Container(
@@ -101,12 +99,16 @@ class _BookDetailPageState extends State<BookDetailPage> {
                                     Icons.headphones,
                                     color: white,
                                   )),
-                              IconButton(
-                                  onPressed: () {},
-                                  icon: const Icon(
-                                    Icons.settings,
-                                    color: white,
-                                  )),
+                              Builder(builder: (context) {
+                                return IconButton(
+                                    onPressed: () {
+                                      getBottomSheetSettings();
+                                    },
+                                    icon: const Icon(
+                                      Icons.settings,
+                                      color: white,
+                                    ));
+                              }),
                             ],
                           ),
                         ],
@@ -210,9 +212,11 @@ class _BookDetailPageState extends State<BookDetailPage> {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              widget.page,
-              style: const TextStyle(
+            const Text(
+              // eee
+              // widget.page
+              "Hello",
+              style: TextStyle(
                 fontSize: 17,
                 fontWeight: FontWeight.w600,
               ),
@@ -329,7 +333,6 @@ class _BookDetailPageState extends State<BookDetailPage> {
             Row(
               children: [
                 const CircleAvatar(
-                  //ccc
                   backgroundImage: NetworkImage(profileUrl),
                 ),
                 const SizedBox(
@@ -407,7 +410,7 @@ class _BookDetailPageState extends State<BookDetailPage> {
                     children: [
                       CircleAvatar(
                         backgroundImage:
-                            NetworkImage(reviewsPeople[index]['img']),
+                            AssetImage(reviewsPeople[index]['img']),
                       ),
                       const SizedBox(
                         width: 10,
@@ -456,8 +459,8 @@ class _BookDetailPageState extends State<BookDetailPage> {
                           fontWeight: FontWeight.w500,
                           height: 1.5,
                         ),
-                        children: [
-                          const TextSpan(
+                        children: const [
+                          TextSpan(
                             text: "more",
                             style: TextStyle(
                               color: primary,
@@ -549,10 +552,9 @@ class _BookDetailPageState extends State<BookDetailPage> {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(12),
                               color: primary,
-                              // aaa
                               image: DecorationImage(
-                                image: NetworkImage(
-                                    similarBooksJson[index]['img']),
+                                image:
+                                    AssetImage(similarBooksJson[index]['img']),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -682,5 +684,28 @@ class _BookDetailPageState extends State<BookDetailPage> {
         ),
       ],
     );
+  }
+
+  getBottomSheetSettings() {
+    List themes = [
+      const Color(0xFFFFFFFF),
+      const Color(0xFF000000),
+      const Color(0xFFF0CEA0),
+    ];
+    showModalBottomSheet(
+        context: context,
+        builder: (BuildContext bc) {
+          return Container(
+            width: double.infinity,
+            height: 250,
+            decoration: BoxDecoration(
+              color: primary.withOpacity(0.15),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 25, horizontal: 15),
+              child: Column(),
+            ),
+          );
+        });
   }
 }

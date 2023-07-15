@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:ebook_clone_app/json/home_json.dart';
 import 'package:ebook_clone_app/theme/colors.dart';
 import 'package:flutter/material.dart';
@@ -57,8 +55,8 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     CircleAvatar(
-                      //ccc
-                      backgroundImage: NetworkImage(profileUrl),
+                      backgroundImage:
+                          AssetImage("assets/images/profile_1.jpeg"),
                     ),
                   ],
                 ),
@@ -191,9 +189,8 @@ class _HomePageState extends State<HomePage> {
           height: 150,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(12),
-            // bbb
             image: const DecorationImage(
-              image: NetworkImage(readyToday),
+              image: AssetImage("assets/images/readToday.jpg"),
               fit: BoxFit.cover,
             ),
           ),
@@ -311,10 +308,9 @@ class _HomePageState extends State<HomePage> {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(12),
                               color: primary,
-                              // aaa
                               image: DecorationImage(
-                                image: NetworkImage(
-                                    specialForYouJson[index]['img']),
+                                image:
+                                    AssetImage(specialForYouJson[index]['img']),
                                 fit: BoxFit.cover,
                               ),
                             ),

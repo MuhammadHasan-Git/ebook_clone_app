@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:ebook_clone_app/pages/home_page.dart';
 import 'package:ebook_clone_app/theme/colors.dart';
 import 'package:flutter/material.dart';

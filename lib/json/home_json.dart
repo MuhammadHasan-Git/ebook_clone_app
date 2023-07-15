@@ -23,7 +23,7 @@ const List storeTags = [
 
 const List specialForYouJson = [
   {
-    "img": "https://covers.openlibrary.org/b/id/12726999-L.jpg",
+    "img": "assets/images/specialForYouJson/specialForYouJson_1.jpg",
     "price": "5.00",
     "title": "Shatter me",
     "sub_title": "1st ed.",
@@ -33,7 +33,7 @@ const List specialForYouJson = [
     "page": "87"
   },
   {
-    "img": "https://covers.openlibrary.org/b/id/10362743-L.jpg",
+    "img": "assets/images/specialForYouJson/specialForYouJson_2.jpg",
     "price": "8.99",
     "title": "A Court of Thorns and Roses",
     "sub_title": "A Court of Thorns and Roses",
@@ -43,7 +43,7 @@ const List specialForYouJson = [
     "page": "263"
   },
   {
-    "img": "https://covers.openlibrary.org/b/id/8743774-L.jpg",
+    "img": "assets/images/specialForYouJson/specialForYouJson_3.jpg",
     "price": "3.40",
     "title": "Where the crawdads sing",
     "sub_title": "First large print edition.",
@@ -53,7 +53,7 @@ const List specialForYouJson = [
     "page": "60"
   },
   {
-    "img": "https://covers.openlibrary.org/b/id/10696993-L.jpg",
+    "img": "assets/images/specialForYouJson/specialForYouJson_4.jpg",
     "price": "5.99",
     "title": "The Seven Husbands of Evelyn Hugo",
     "sub_title": "A Novel",
@@ -63,7 +63,7 @@ const List specialForYouJson = [
     "page": "872"
   },
   {
-    "img": "https://covers.openlibrary.org/b/id/12567115-L.jpg",
+    "img": "assets/images/specialForYouJson/specialForYouJson_5.jpg",
     "price": "2.99",
     "title": "Reminders of Him",
     "sub_title": "A Novel",
@@ -76,15 +76,13 @@ const List specialForYouJson = [
 
 List reviewsPeople = [
   {
-    "img":
-        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHByb2ZpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    "img": "assets/images/reviewsPeople/reviewsPeople_1.jpg",
     "name": "Miranda",
     "rate": 3.0,
     "text": "For once I actually thought Colleen wasn’t going to make me cry."
   },
   {
-    "img":
-        "https://images.unsplash.com/photo-1523701911984-474f3d34537b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "img": "assets/images/reviewsPeople/reviewsPeople_2.jpg",
     "name": "Selena",
     "rate": 4.5,
     "text":
@@ -94,7 +92,7 @@ List reviewsPeople = [
 
 const List similarBooksJson = [
   {
-    "img": "https://covers.openlibrary.org/b/id/12860069-L.jpg",
+    "img": "assets/images/similarBooksJson/similarBooksJson_1.jpg",
     "price": "2.50",
     "title": "I'm Glad My Mom Died",
     "sub_title": "I'm Glad My Mom Died",
@@ -104,7 +102,7 @@ const List similarBooksJson = [
     "page": "200"
   },
   {
-    "img": "https://covers.openlibrary.org/b/id/12905571-L.jpg",
+    "img": "assets/images/similarBooksJson/similarBooksJson_2.jpg",
     "price": "5.99",
     "title": "The Love Hypothesis",
     "sub_title": "The Love Hypothesis",
@@ -114,7 +112,7 @@ const List similarBooksJson = [
     "page": "150"
   },
   {
-    "img": "https://covers.openlibrary.org/b/id/402210-L.jpg",
+    "img": "assets/images/similarBooksJson/similarBooksJson_3.jpg",
     "price": "2.20",
     "title": "The 48 Laws of Power",
     "sub_title": "The 48 Laws of Power",
