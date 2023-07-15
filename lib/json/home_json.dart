@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 const String profileUrl =
     "https://images.unsplash.com/photo-1599834562135-b6fc90e642ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWFuJTIwcHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60";
-const String readyToday = "";
+const String readyToday =
+    "https://images.unsplash.com/photo-1518378379207-3418372afea3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80";
 
 const List tags = [
   {"label": "Education", "color": Color(0xFF7871aa)},
@@ -27,7 +28,7 @@ const List specialForYouJson = [
     "title": "Shatter me",
     "sub_title": "1st ed.",
     "author_name": "Tahereh Mafi",
-    "rate": 4.31,
+    "rate": 4.3,
     "favourite": true,
     "page": "87"
   },
@@ -37,7 +38,7 @@ const List specialForYouJson = [
     "title": "A Court of Thorns and Roses",
     "sub_title": "A Court of Thorns and Roses",
     "author_name": "Sarah J. Maas",
-    "rate": 4.15,
+    "rate": 4.1,
     "favourite": false,
     "page": "263"
   },
@@ -47,7 +48,7 @@ const List specialForYouJson = [
     "title": "Where the crawdads sing",
     "sub_title": "First large print edition.",
     "author_name": "Delia Owens",
-    "rate": 3.20,
+    "rate": 3.2,
     "favourite": false,
     "page": "60"
   },
@@ -57,7 +58,7 @@ const List specialForYouJson = [
     "title": "The Seven Husbands of Evelyn Hugo",
     "sub_title": "A Novel",
     "author_name": "Taylor Jenkins Reid",
-    "rate": 4.12,
+    "rate": 4.1,
     "favourite": true,
     "page": "872"
   },
@@ -67,7 +68,7 @@ const List specialForYouJson = [
     "title": "Reminders of Him",
     "sub_title": "A Novel",
     "author_name": "Colleen Hoover",
-    "rate": 2.00,
+    "rate": 2.0,
     "favourite": false,
     "page": "76"
   }
@@ -103,7 +104,7 @@ const List similarBooksJson = [
     "page": "200"
   },
   {
-    "img": "https://covers.openlibrary.org/b/id/12842027-L.jpg",
+    "img": "https://covers.openlibrary.org/b/id/12905571-L.jpg",
     "price": "5.99",
     "title": "The Love Hypothesis",
     "sub_title": "The Love Hypothesis",
