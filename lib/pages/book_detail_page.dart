@@ -492,7 +492,6 @@ class _BookDetailPageState extends State<BookDetailPage> {
   }
 
   Widget getFourthSection() {
-    var size = MediaQuery.of(context).size;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

@@ -3,8 +3,6 @@ import 'package:ebook_clone_app/theme/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:line_icons/line_icons.dart';
-
-import '../json/home_json.dart';
 import '../json/my_book_json.dart';
 import 'book_detail_page.dart';
 

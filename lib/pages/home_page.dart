@@ -237,7 +237,6 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget getSpecialForYou() {
-    var size = MediaQuery.of(context).size;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

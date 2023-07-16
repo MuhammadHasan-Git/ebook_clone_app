@@ -94,7 +94,6 @@ class _StorePageState extends State<StorePage> {
   }
 
   Widget getRecommendation() {
-    var size = MediaQuery.of(context).size;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
