@@ -1,6 +1,6 @@
 const List recommendationsList = [
   {
-    "img": "https://covers.openlibrary.org/b/id/12080346-L.jpg",
+    "img": "assets/images/recommendationsList/recommendationsList_1.jpg",
     "price": "5.50",
     "title": "Charlotte's Web",
     "sub_title": "Charlotte's Web",
@@ -10,7 +10,7 @@ const List recommendationsList = [
     "page": "198"
   },
   {
-    "img": "https://covers.openlibrary.org/w/id/6917429-M.jpg",
+    "img": "assets/images/recommendationsList/recommendationsList_2.jpg",
     "price": "6.99",
     "title": "Red rabbit",
     "sub_title": "Red Rabbit ",
@@ -20,7 +20,7 @@ const List recommendationsList = [
     "page": "129"
   },
   {
-    "img": "https://covers.openlibrary.org/b/id/6598760-L.jpg",
+    "img": "assets/images/recommendationsList/recommendationsList_3.jpg",
     "price": "6.20",
     "title": "Statistical methods for psychology",
     "sub_title": "Statistical methods for psychology",
@@ -30,7 +30,7 @@ const List recommendationsList = [
     "page": "90"
   },
   {
-    "img": "https://covers.openlibrary.org/w/id/1142691-M.jpg",
+    "img": "assets/images/recommendationsList/recommendationsList_4.jpg",
     "price": "5.76",
     "title": "Introductory statistics.",
     "sub_title": "Introductory statistics.",
@@ -40,7 +40,7 @@ const List recommendationsList = [
     "page": "192"
   },
   {
-    "img": "https://covers.openlibrary.org/b/id/8944537-L.jpg",
+    "img": "assets/images/recommendationsList/recommendationsList_5.jpg",
     "price": "6.20",
     "title": "Advanced Research in VLSI",
     "sub_title": "Advanced Research in VLSI",
@@ -53,7 +53,7 @@ const List recommendationsList = [
 
 const List trendingBooks = [
   {
-    "img": "https://covers.openlibrary.org/b/olid/OL31129806M-M.jpg",
+    "img": "assets/images/trendingBooks/trendingBooks_1.jpg",
     "price": "10.50",
     "title": "Hopeless",
     "sub_title": "Hopeless",
@@ -63,7 +63,7 @@ const List trendingBooks = [
     "page": "150"
   },
   {
-    "img": "https://covers.openlibrary.org/b/id/10107803-M.jpg",
+    "img": "assets/images/trendingBooks/trendingBooks_2.jpg",
     "price": "8.99",
     "title": "Punk 57",
     "sub_title": "Punk 57",
@@ -73,7 +73,7 @@ const List trendingBooks = [
     "page": "90"
   },
   {
-    "img": "https://covers.openlibrary.org/b/id/6598760-L.jpg",
+    "img": "assets/images/recommendationsList/recommendationsList_3.jpg",
     "price": "6.20",
     "title": "Statistical methods for psychology",
     "sub_title": "Statistical methods for psychology",
@@ -83,7 +83,7 @@ const List trendingBooks = [
     "page": "90"
   },
   {
-    "img": "https://covers.openlibrary.org/b/id/12749873-M.jpg",
+    "img": "assets/images/trendingBooks/trendingBooks_3.jpg",
     "price": "7.50",
     "title": "It starts with us",
     "sub_title": "It starts with us",
@@ -93,7 +93,7 @@ const List trendingBooks = [
     "page": "162"
   },
   {
-    "img": "https://covers.openlibrary.org/b/id/8747160-M.jpg",
+    "img": "assets/images/trendingBooks/trendingBooks_4.jpg",
     "price": "4.20",
     "title": "Verity",
     "sub_title": "Verity",

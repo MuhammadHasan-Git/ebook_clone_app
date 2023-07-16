@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
 
-const String profileUrl =
-    "https://images.unsplash.com/photo-1599834562135-b6fc90e642ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWFuJTIwcHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60";
-const String readyToday =
-    "https://images.unsplash.com/photo-1518378379207-3418372afea3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80";
-
 const List tags = [
   {"label": "Education", "color": Color(0xFF7871aa)},
   {"label": "Self-development", "color": Color(0xFF7fb069)},

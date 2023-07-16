@@ -73,6 +73,9 @@ flutter:
     - assets/images/reviewsPeople/
     - assets/images/similarBooksJson/
     - assets/images/specialForYouJson/
+    - assets/images/continueReadingJson/
+    - assets/images/recommendationsList/
+    - assets/images/trendingBooks/
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

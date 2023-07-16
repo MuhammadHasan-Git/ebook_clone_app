@@ -1,4 +1,5 @@
 import 'package:blurrycontainer/blurrycontainer.dart';
+import 'package:ebook_clone_app/pages/play_now_page.dart';
 import 'package:ebook_clone_app/theme/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
@@ -14,6 +15,7 @@ class BookDetailPage extends StatefulWidget {
   final String rate;
 
   final String page;
+
   const BookDetailPage(
       {super.key,
       required this.img,
@@ -94,7 +96,16 @@ class _BookDetailPageState extends State<BookDetailPage> {
                                     color: white,
                                   )),
                               IconButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (_) => PlayNowPage(
+                                              img: widget.img,
+                                              title: widget.title,
+                                              subTitle: widget.subTitle),
+                                        ));
+                                  },
                                   icon: const Icon(
                                     Icons.headphones,
                                     color: white,
@@ -333,7 +344,7 @@ class _BookDetailPageState extends State<BookDetailPage> {
             Row(
               children: [
                 const CircleAvatar(
-                  backgroundImage: NetworkImage(profileUrl),
+                  backgroundImage: AssetImage("assets/images/profile_1.jpeg"),
                 ),
                 const SizedBox(
                   width: 10,
@@ -703,7 +714,212 @@ class _BookDetailPageState extends State<BookDetailPage> {
             ),
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 25, horizontal: 15),
-              child: Column(),
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: List.generate(themes.length, (index) {
+                          if (index == 0) {
+                            return Padding(
+                              padding: const EdgeInsets.only(right: 12),
+                              child: Container(
+                                width: 40,
+                                height: 40,
+                                decoration: BoxDecoration(
+                                  color: themes[index],
+                                  shape: BoxShape.circle,
+                                ),
+                              ),
+                            );
+                          }
+                          return Padding(
+                            padding: const EdgeInsets.only(right: 12),
+                            child: Container(
+                              width: 30,
+                              height: 30,
+                              decoration: BoxDecoration(
+                                  color: themes[index],
+                                  shape: BoxShape.circle,
+                                  border: Border.all(
+                                    color: black.withOpacity(0.7),
+                                    width: 0.5,
+                                  )),
+                            ),
+                          );
+                        }),
+                      ),
+                      Row(
+                        children: [
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                              color: primary,
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                color: black.withOpacity(0.7),
+                                width: 0.5,
+                              ),
+                            ),
+                            child: const Center(
+                                child: Text(
+                              "TT",
+                              style: TextStyle(
+                                fontSize: 17,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            )),
+                          ),
+                          const SizedBox(
+                            width: 12,
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                color: primary,
+                                width: 0.5,
+                              ),
+                            ),
+                            child: const Center(
+                                child: Text(
+                              "Tt",
+                              style: TextStyle(
+                                fontSize: 17,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            )),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 30,
+                  ),
+                  Stack(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(top: 4),
+                        child: Container(
+                          width: double.infinity,
+                          height: 4,
+                          decoration: BoxDecoration(
+                            color: black.withOpacity(0.1),
+                            borderRadius: BorderRadius.circular(5),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 4),
+                        child: Container(
+                          width: 150,
+                          height: 4,
+                          decoration: BoxDecoration(
+                            color: primary,
+                            borderRadius: BorderRadius.circular(5),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 145),
+                        child: Container(
+                          width: 12,
+                          height: 12,
+                          decoration: const BoxDecoration(
+                            color: primary,
+                            shape: BoxShape.circle,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 5,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "Aa",
+                        style: TextStyle(
+                          fontSize: 13,
+                          color: black.withOpacity(0.8),
+                        ),
+                      ),
+                      Text(
+                        "Aa",
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: black.withOpacity(0.8),
+                        ),
+                      )
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 30,
+                  ),
+                  Stack(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(top: 4),
+                        child: Container(
+                          width: double.infinity,
+                          height: 4,
+                          decoration: BoxDecoration(
+                            color: black.withOpacity(0.1),
+                            borderRadius: BorderRadius.circular(5),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 4),
+                        child: Container(
+                          width: 150,
+                          height: 4,
+                          decoration: BoxDecoration(
+                            color: primary,
+                            borderRadius: BorderRadius.circular(5),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 145),
+                        child: Container(
+                          width: 12,
+                          height: 12,
+                          decoration: const BoxDecoration(
+                            color: primary,
+                            shape: BoxShape.circle,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 5,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Icon(
+                        Icons.light_mode,
+                        color: black.withOpacity(0.6),
+                        size: 18,
+                      ),
+                      Icon(
+                        Icons.light_mode,
+                        color: black.withOpacity(0.6),
+                        size: 28,
+                      )
+                    ],
+                  ),
+                ],
+              ),
             ),
           );
         });

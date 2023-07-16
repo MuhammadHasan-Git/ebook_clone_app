@@ -1,6 +1,6 @@
 const List continueReadingJson = [
   {
-    "img": "https://covers.openlibrary.org/b/id/10601397-L.jpg",
+    "img": "assets/images/continueReadingJson/continueReadingJson_1.jpg",
     "price": "3.45",
     "title": "Danny the Champion of the World",
     "sub_title": "Danny the Champion of the World",
@@ -11,7 +11,7 @@ const List continueReadingJson = [
     "percentage": 65.0
   },
   {
-    "img": "https://covers.openlibrary.org/w/id/149650-M.jpg",
+    "img": "assets/images/continueReadingJson/continueReadingJson_2.jpg",
     "price": "5.99",
     "title": "Cell",
     "sub_title": "A Novel",
@@ -22,7 +22,7 @@ const List continueReadingJson = [
     "percentage": 30.0
   },
   {
-    "img": "https://covers.openlibrary.org/b/id/7081826-L.jpg",
+    "img": "assets/images/continueReadingJson/continueReadingJson_3.jpg",
     "price": "5.99",
     "title": "Chemistry",
     "sub_title": "4th ed.",
@@ -36,17 +36,17 @@ const List continueReadingJson = [
 
 const List unReadJson = [
   {
-    "img": "https://covers.openlibrary.org/b/id/12860069-L.jpg",
+    "img": "assets/images/continueReadingJson/unReadJson.jpeg",
     "price": "2.50",
-    "title": "I'm Glad My Mom Died",
-    "sub_title": "I'm Glad My Mom Died",
+    "title": "Where the crawdads sing",
+    "sub_title": "Where the crawdads sing",
     "author_name": "Jennette McCurdy",
     "rate": 4.0,
     "favourite": false,
     "page": "200"
   },
   {
-    "img": "https://covers.openlibrary.org/b/id/12842027-L.jpg",
+    "img": "assets/images/similarBooksJson/similarBooksJson_2.jpg",
     "price": "5.99",
     "title": "The Love Hypothesis",
     "sub_title": "The Love Hypothesis",
@@ -56,7 +56,7 @@ const List unReadJson = [
     "page": "150"
   },
   {
-    "img": "https://covers.openlibrary.org/b/id/402210-L.jpg",
+    "img": "assets/images/similarBooksJson/similarBooksJson_3.jpg",
     "price": "2.20",
     "title": "The 48 Laws of Power",
     "sub_title": "The 48 Laws of Power",
