@@ -581,6 +581,12 @@ class _BookDetailPageState extends State<BookDetailPage> {
                             right: 10,
                             top: 10,
                             child: GestureDetector(
+                              onTap: () {
+                                setState(() {
+                                  similarBooksJson[index]['favourite'] =
+                                      !similarBooksJson[index]['favourite'];
+                                });
+                              },
                               child: Container(
                                 width: 30,
                                 height: 30,

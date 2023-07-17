@@ -1,9 +1,9 @@
 import 'package:ebook_clone_app/json/store_json.dart';
+import 'package:ebook_clone_app/pages/home_page.dart';
 import 'package:ebook_clone_app/theme/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:line_icons/line_icons.dart';
-
 import '../json/home_json.dart';
 import 'book_detail_page.dart';
 
@@ -15,6 +15,11 @@ class StorePage extends StatefulWidget {
 }
 
 class _StorePageState extends State<StorePage> {
+  Widget buildOverscrollIndicator(
+      BuildContext context, Widget child, ScrollableDetails details) {
+    return child;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,27 +30,30 @@ class _StorePageState extends State<StorePage> {
 
   Widget getBody() {
     return SafeArea(
-      child: SingleChildScrollView(
-        padding: const EdgeInsets.all(15),
-        child: Column(
-          children: [
-            const SizedBox(
-              height: 10,
-            ),
-            getSearchAndCart(),
-            const SizedBox(
-              height: 30,
-            ),
-            getRecommendation(),
-            const SizedBox(
-              height: 30,
-            ),
-            getGenres(),
-            const SizedBox(
-              height: 30,
-            ),
-            getTrendingProducts(),
-          ],
+      child: ScrollConfiguration(
+        behavior: MyBehavior(),
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.all(15),
+          child: Column(
+            children: [
+              const SizedBox(
+                height: 10,
+              ),
+              getSearchAndCart(),
+              const SizedBox(
+                height: 30,
+              ),
+              getRecommendation(),
+              const SizedBox(
+                height: 30,
+              ),
+              getGenres(),
+              const SizedBox(
+                height: 30,
+              ),
+              getTrendingProducts(),
+            ],
+          ),
         ),
       ),
     );
@@ -184,6 +192,12 @@ class _StorePageState extends State<StorePage> {
                             right: 10,
                             top: 10,
                             child: GestureDetector(
+                              onTap: () {
+                                setState(() {
+                                  recommendationsList[index]['favourite'] =
+                                      !recommendationsList[index]['favourite'];
+                                });
+                              },
                               child: Container(
                                 width: 30,
                                 height: 30,
@@ -452,6 +466,12 @@ class _StorePageState extends State<StorePage> {
                             right: 10,
                             top: 10,
                             child: GestureDetector(
+                              onTap: () {
+                                setState(() {
+                                  trendingBooks[index]['favourite'] =
+                                      !trendingBooks[index]['favourite'];
+                                });
+                              },
                               child: Container(
                                 width: 30,
                                 height: 30,

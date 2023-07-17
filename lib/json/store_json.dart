@@ -1,4 +1,4 @@
-const List recommendationsList = [
+List recommendationsList = [
   {
     "img": "assets/images/recommendationsList/recommendationsList_1.jpg",
     "price": "5.50",
@@ -6,7 +6,7 @@ const List recommendationsList = [
     "sub_title": "Charlotte's Web",
     "author_name": "E. B. White",
     "rate": 4.5,
-    "favourite": true,
+    "favourite": false,
     "page": "198"
   },
   {
@@ -16,7 +16,7 @@ const List recommendationsList = [
     "sub_title": "Red Rabbit ",
     "author_name": "Tom Clancy",
     "rate": 5.0,
-    "favourite": true,
+    "favourite": false,
     "page": "129"
   },
   {
@@ -51,7 +51,7 @@ const List recommendationsList = [
   },
 ];
 
-const List trendingBooks = [
+List trendingBooks = [
   {
     "img": "assets/images/trendingBooks/trendingBooks_1.jpg",
     "price": "10.50",
@@ -59,7 +59,7 @@ const List trendingBooks = [
     "sub_title": "Hopeless",
     "author_name": "Colleen Hoover",
     "rate": 4.2,
-    "favourite": true,
+    "favourite": false,
     "page": "150"
   },
   {
@@ -69,7 +69,7 @@ const List trendingBooks = [
     "sub_title": "Punk 57",
     "author_name": "TPenelope Douglas",
     "rate": 3.0,
-    "favourite": true,
+    "favourite": false,
     "page": "90"
   },
   {

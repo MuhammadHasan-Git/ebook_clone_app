@@ -21,6 +21,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  bool isFavourite = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -326,6 +327,12 @@ class _HomePageState extends State<HomePage> {
                             right: 10,
                             top: 10,
                             child: GestureDetector(
+                              onTap: () {
+                                setState(() {
+                                  specialForYouJson[index]['favourite'] =
+                                      !specialForYouJson[index]['favourite'];
+                                });
+                              },
                               child: Container(
                                 width: 30,
                                 height: 30,

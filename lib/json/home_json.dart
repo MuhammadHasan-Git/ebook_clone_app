@@ -16,7 +16,7 @@ const List storeTags = [
   {"label": "Detectives", "color": Color(0xFF8f8073)}
 ];
 
-const List specialForYouJson = [
+List specialForYouJson = [
   {
     "img": "assets/images/specialForYouJson/specialForYouJson_1.jpg",
     "price": "5.00",
@@ -24,7 +24,7 @@ const List specialForYouJson = [
     "sub_title": "1st ed.",
     "author_name": "Tahereh Mafi",
     "rate": 4.3,
-    "favourite": true,
+    "favourite": false,
     "page": "87"
   },
   {
@@ -54,7 +54,7 @@ const List specialForYouJson = [
     "sub_title": "A Novel",
     "author_name": "Taylor Jenkins Reid",
     "rate": 4.1,
-    "favourite": true,
+    "favourite": false,
     "page": "872"
   },
   {
@@ -85,7 +85,7 @@ List reviewsPeople = [
   }
 ];
 
-const List similarBooksJson = [
+List similarBooksJson = [
   {
     "img": "assets/images/similarBooksJson/similarBooksJson_1.jpg",
     "price": "2.50",

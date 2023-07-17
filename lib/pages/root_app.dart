@@ -1,3 +1,4 @@
+import 'package:ebook_clone_app/pages/favourite_page.dart';
 import 'package:ebook_clone_app/pages/home_page.dart';
 import 'package:ebook_clone_app/pages/my_book_page.dart';
 import 'package:ebook_clone_app/pages/store_page.dart';
@@ -32,15 +33,7 @@ class _RootAppState extends State<RootApp> {
         HomePage(),
         MyBookPage(),
         StorePage(),
-        Center(
-          child: Text(
-            "Favourite Page",
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        )
+        FavouritePage(),
       ],
     );
   }

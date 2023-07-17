@@ -336,7 +336,7 @@ class _MyBookPageState extends State<MyBookPage> {
                                 ),
                               ],
                             ),
-                          )
+                          ),
                         ],
                       ),
                     ),
